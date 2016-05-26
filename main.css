@@ -9,7 +9,7 @@ body {
     margin: 0 auto;
     margin-top: 30px;
     padding: 2em 2em 4em;
-    max-width: 1200px;
+    max-width: 1000px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5em;
@@ -51,7 +51,7 @@ img {
     border: 0px solid rgba(0, 0, 0, 0.12);
     display: block;
     margin: 1.3em auto;
-    max-width:1100px;
+    max-width:900px;
 }
 
 
