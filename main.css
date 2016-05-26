@@ -7,14 +7,15 @@ html {
 
 body {
     margin: 0 auto;
+    margin-top: 30px;
     padding: 2em 2em 4em;
-    max-width: 1000px;
+    max-width: 1200px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5em;
     color: #545454;
     background-color: #ffffff;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    border: 1px solid #3366cc;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,7 +30,13 @@ h2 {
 
 a {
     color: #0083e8;
+    text-decoration: none;
 }
+
+a:hover {
+    color: #4d88ff;
+}
+
 
 b, strong {
     font-weight: 600;
@@ -40,30 +47,25 @@ samp {
 }
 
 img {
-    -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
-    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     background: transparent;
-    border: 10px solid rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+    border: 0px solid rgba(0, 0, 0, 0.12);
     display: block;
     margin: 1.3em auto;
-    max-width: 95%;
+    max-width:1100px;
 }
 
-@-webkit-keyframes colorize {
-    0% {
-        -webkit-filter: grayscale(100%);
-    }
-    100% {
-        -webkit-filter: grayscale(0%);
-    }
+
+.presemail {
+    text-decoration: none;
+    color: #002b80;
+    text-transform: uppercase;
+    font:  "verdana", "arial";
+    
 }
 
-@keyframes colorize {
-    0% {
-        filter: grayscale(100%);
-    }
-    100% {
-        filter: grayscale(0%);
-    }
+.presmail:hover {
+    color: #4d88ff;
+}
+
+
 }
