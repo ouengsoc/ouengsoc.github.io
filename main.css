@@ -96,13 +96,13 @@ td.Sponsor {
 .SponsorSilver {
     max-width: 190px;
     border: 0px solid red;
-    opacity: 80%;
+    opacity: .9;
 }
 
 
 .SponsorBronzePlus {
     max-width: 120px;
-    opacity: 70%;
+    opacity: .7;
 }
 
 
@@ -110,5 +110,5 @@ td.Sponsor {
     max-width: 100px;
     padding-left: 30px;
     padding-right: 30px;
-    opacity: 60%;
+    opacity: .6;
 }
