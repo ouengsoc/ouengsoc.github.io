@@ -1,22 +1,16 @@
 html {
     background-color: #ffffff;
-    background-image: -webkit-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
-    background-image: linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
-    -webkit-font-smoothing: antialiased;
+
 }
 
 body {
-    margin: 0 auto;
-    margin-top: 30px;
-    padding: 2em 2em 4em;
-    max-width: 1000px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5em;
     color: #545454;
     background-color: #ffffff;
-    border: 1px solid #3366cc;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     color: #222;
@@ -55,7 +49,16 @@ img {
 }
 
 
-.presemail {
+#logo {
+    border: 1px solid #3366cc;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 2em 2em 4em;
+    max-width: 1000px;
+}
+
+
+.PresMail {
     text-decoration: none;
     color: #002b80;
     text-transform: uppercase;
@@ -63,9 +66,46 @@ img {
     
 }
 
-.presmail:hover {
+
+.PresMail:hover {
     color: #4d88ff;
 }
 
 
+table.Sponsor {
+    border: 0px solid black;
+    border-collapse: collapse;
+}
+
+
+td.Sponsor {
+    border: 0px solid red;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.SponsorGold {
+    max-width: 300px;
+    border: 0px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.SponsorSilver {
+    max-width: 190px;
+    border: 0px solid red;
+}
+
+
+.SponsorBronzePlus {
+    max-width: 120px;
+}
+
+
+.SponsorBronze {
+    max-width: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
