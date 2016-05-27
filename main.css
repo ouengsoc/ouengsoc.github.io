@@ -97,30 +97,43 @@ td.Sponsor {
 }
 
 
+td.SponsorBronze {
+    max-width: 100px;
+    width: 17%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+td.SponsorSilver {
+    max-width: 190px;
+    width: 23%;
+}
+
+
 .SponsorGold {
     max-width: 300px;
     border: 0px solid black;
     padding-left: 20px;
     padding-right: 20px;
+    opacity: .9;
 }
 
 
 .SponsorSilver {
     max-width: 190px;
     border: 0px solid red;
-    opacity: .9;
+    opacity: .75;
 }
 
 
 .SponsorBronzePlus {
     max-width: 120px;
-    opacity: .7;
+    opacity: .8;
 }
 
 
 .SponsorBronze {
     max-width: 100px;
-    padding-left: 30px;
-    padding-right: 30px;
-    opacity: .6;
+    opacity: .8;
 }
