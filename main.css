@@ -19,7 +19,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    margin-top: 1.3em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #545454;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-weight: 200;
+    text-transform: uppercase;
 }
 
 a {
@@ -55,8 +62,13 @@ img {
     margin-top: 30px;
     padding: 2em 2em 4em;
     max-width: 1000px;
+    min-width: 800px;
 }
 
+
+.HeaderImage {
+    width: 99%;
+}
 
 .PresMail {
     text-decoration: none;
