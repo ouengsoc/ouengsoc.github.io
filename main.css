@@ -1,5 +1,5 @@
 html {
-    background-color: #ffffff;
+    background-color: #dddddd;
 
 }
 
@@ -8,7 +8,9 @@ body {
     font-size: 16px;
     line-height: 1.5em;
     color: #545454;
-    background-color: #ffffff;
+    background-color: #eeeeee;
+    margin-bottom: 40px;
+    padding-bottom: 5px;
 }
 
 
@@ -16,6 +18,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #222;
     font-weight: 600;
     line-height: 1.3em;
+
 }
 
 h2 {
@@ -23,7 +26,6 @@ h2 {
     font-size: 16px;
     line-height: 1.5em;
     color: #545454;
-    background-color: #ffffff;
     text-decoration: none;
     font-weight: 200;
     text-transform: uppercase;
@@ -47,41 +49,118 @@ samp {
     display: none;
 }
 
+
 img {
     background: transparent;
     border: 0px solid rgba(0, 0, 0, 0.12);
     display: block;
-    margin: 1.3em auto;
     max-width:900px;
 }
 
 
-#logo {
-    border: 1px solid #3366cc;
-    margin: 0 auto;
-    margin-top: 30px;
-    padding: 2em 2em 4em;
-    max-width: 1000px;
-    min-width: 800px;
-}
 
-
-.HeaderImage {
-    width: 99%;
-}
-
-.PresMail {
-    text-decoration: none;
-    color: #002b80;
-    text-transform: uppercase;
-    font:  "verdana", "arial";
+table, tr, td {
+    border: 0px solid red; 
+    border-collapse: collapse;
+    padding-right: 20px;
+    padding-bottom: 0px;
     
 }
 
 
-.PresMail:hover {
-    color: #4d88ff;
+#Container {
+    min-width: 800px;
+    max-width: 950px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+
 }
+
+#TopBar {
+    border: 0px solid pink;
+    margin: 0px;
+    margin-top: 30px;
+    padding-top: 1em;
+}
+
+
+a.TopBar {
+    font: "arial";
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #545454;
+    padding-left: 5px;
+}
+
+
+a.TopBar:hover {
+    color: #4d88ff;
+    text-decoration: none;
+    text-decoration-color: #ffff00;
+}
+
+
+img.TopBar{
+    width:20%;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+
+td.TopBarLink {
+    height: 20px;
+    padding-right: 15px;
+    border-bottom: 1px solid red;
+    text-align: right;
+}
+
+table.TopBar {
+    border: 0px solid red;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+a.TopBarInfo {
+    font: "arial";
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #999999;
+    font-size: 12px;
+}
+
+
+a.TopBarInfo:hover {
+    color: #4d88ff;
+    text-decoration: none;
+    text-decoration-color: #ffff00;
+}
+
+
+td.TopBarLink {
+    height: 20px;
+    padding-right: 15px;
+    border-bottom: 0px solid red;
+    text-align: right;
+}
+
+
+
+
+
+#Main {
+    border: 0px solid #999999;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 2em 2em 4em;
+    background-color: #ffffff;
+    min-height: 500px;
+}
+
+
+
+
+
 
 
 table.Sponsor {
@@ -124,6 +203,8 @@ td.SponsorSilver {
     max-width: 190px;
     border: 0px solid red;
     opacity: .75;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 
@@ -137,3 +218,4 @@ td.SponsorSilver {
     max-width: 100px;
     opacity: .8;
 }
+
