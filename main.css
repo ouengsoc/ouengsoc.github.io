@@ -33,9 +33,9 @@ h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5em;
-    color: #545454;
+    color: #1F3264;
     text-decoration: none;
-    font-weight: 10px;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -67,7 +67,7 @@ img {
 
 
 table, tr, td {
-    border: 0px solid red; 
+    border: 1px solid red; 
     border-collapse: collapse;
     padding-right: 20px;
     padding-bottom: 0px;
@@ -82,6 +82,7 @@ table, tr, td {
     margin-bottom: 2em;
 
 }
+
 
 #TopBar {
     border: 0px solid pink;
@@ -175,6 +176,29 @@ td.TopBarLink {
 
 
 
+#BotBar {
+    border: 0px solid #999999;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+
+table.BotBar {
+    border: 0px solid red;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+td.BotBar {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    
+}
+
+
+
 
 
 
@@ -234,4 +258,29 @@ td.SponsorSilver {
     max-width: 100px;
     opacity: .8;
 }
+
+
+
+td.Date {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 14px;
+    text-align: right;
+    width: 200px;
+    border-color: #aaaaaa;
+    border-width: 0px;
+    border-right-width: 1px;
+}
+
+
+td.Event {
+    text-transform: ;
+    font-weight: 100;
+    font-size: 15px;
+    width: 400px;
+    border-color: #aaaaaa;
+    padding-left: 20px;
+    border-width:1px;
+}
+
 
