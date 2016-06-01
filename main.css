@@ -67,7 +67,7 @@ img {
 
 
 table, tr, td {
-    border: 1px solid red; 
+    border: 0px solid red; 
     border-collapse: collapse;
     padding-right: 20px;
     padding-bottom: 0px;
