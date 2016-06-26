@@ -58,24 +58,32 @@
         
             <!--Main page content-->
             <h1>Buy a membership</h1>
+            
+            Memberships are fifteen pounds. You can buy a membership at any of our events or online.
+            <br>
+            To buy a membership online, fill out the form below. <br><br>
+            
+            
             <!--form action="test.php"-->
             <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
             <table>
                 <tr>
                     <td></td>
-                    <td class="Form2" colspan="2">
-                        Memberships are fifteen pounds. You can buy a membership at any of our events or 
+                    <td class="Form2_dark" colspan="3">
                         Please enter your name and select your college. Be sure to check the email listed is correct. 
                         <br><br>You will receive an email with bank transfer instructions. If you prefer, you can bring fifteen pounds to the next engineering society event. <br><br>
                     </td>
                 </tr>
                 <tr>
-                    <td width="100px"></td>
+                    <td width="50px"></td>
                     <td class="Form1_noline" width="150px">
                         First Name
                     </td>
+                    <td class="Form2_noline" width="100px">
+                        <input type="text" name="FirstName" id="FirstName" value="First" class="Form" onkeyup="javascript:printEmail('FirstName')" style="width: 192px"> 
+                    </td>
                     <td class="Form2_noline">
-                         <input type="text" name="FirstName" id="FirstName" value="First" class="Form"  onkeyup="javascript:printEmail()" > 
+                        <input type="text" name="errorFirstName" id="errorFirstName" class="Error" value="error" readonly="true">
                     </td>
                 </tr>
                 <tr>
@@ -84,7 +92,10 @@
                         Last Name
                     </td>
                     <td class="Form2_noline">
-                        <input type="text" name="LastName" id="LastName" value="Last" class="Form" onkeyup="javascript:printEmail()" > 
+                        <input type="text" name="LastName" id="LastName" value="Last" class="Form" onkeyup="javascript:printEmail('LastName')" style="width: 192px"> 
+                    </td>
+                    <td class="Form2_noline">
+                        <input type="text" name="errorLastName" id="errorLastName" class="Error" value="error" readonly="true">
                     </td>
                 </tr>
                 <tr>
@@ -93,7 +104,7 @@
                         College 
                     </td>
                     <td class="Form2">
-                        <select name="College" class="Form" id="College" onchange="javascript:printEmail()">
+                        <select name="College" class="Form" id="College" onchange="javascript:printCollege()" style="width: 205px;">
                             <option value="balliol" class="Form">Balliol</option>
                             <option value="bnc" class="Form">Brasenose</option>
                             <option value="chch" class="Form">Christ Church</option>
@@ -123,16 +134,18 @@
                             <option value="worc" class="Form">Worcester</option>
                         </select>
                     </td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td class="Form1">
                         Email 
                     </td>
-                    <td class="Form2">
+                    <td class="Form2" colspan="2">
                         <input type="text" name="Email" id="Email" class="Form_locked" style="width:300px" readonly="true" value="first.last@balliol.ox.ac.uk"> 
                     
                     </td>
+                    
                 </tr>
                 <!--<tr>
                     <td></td>
@@ -150,16 +163,17 @@
                     <td class="Form1">
                         Mailing List
                     </td>
-                    <td class="Form2">
-                        <input type="checkbox" name="Mailing">
+                        <td class="Form2" colspan="2">
+                        <input type="checkbox" name="Mailing"  checked="true" > (Sign up for our mailing list)
                     </td>
                 </tr>
                 <tr>
                     <td></td><td></td>
-                    <td class="Form1_noline">
-                        <input type="submit" name="Test" style="border: 1px #cccccc solid; background-color: white; letter-spacing: 1px; text-transform: uppercase;" onclick="printEmail()">
+                    <td class="Form2_noline">
+                        <input type="submit" name="Test" style="border: 1px #cccccc solid; background-color: white; letter-spacing: 1px; text-transform: uppercase; color: #777777;" onclick="printEmail()">
                     </td>
                     <td class="Form2_noline"></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>
@@ -167,6 +181,15 @@
                 </tr>
             </table>
             </form>
+            
+            <table>
+                <tr>
+                    <td width="50px"></td>
+                    <td class="Form1" style="text-align:left; width: 100px;">
+                        Help
+                    </td>
+                </tr>
+            </table>
             
 
             

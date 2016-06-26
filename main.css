@@ -250,6 +250,14 @@ td.Form2 {
 }
 
 
+td.Form2_dark {
+    color: #777777;
+    font-size:14px; 
+    letter-spacing: 1px;
+    padding-top:10px;
+    border-bottom: 1px #cccccc solid;
+}
+
 
 td.Form2_noline {
     color: #999999;
@@ -301,6 +309,28 @@ option.Form {
 }
 
 
+#ErrorFirst {
+    visibility: visible;
+}
+
+
+#ErrorLast{
+    visibility: visible;
+}
+
+
+input.Error {
+    visibility: hidden;
+    border: 0px #cc0000 solid;
+    background-color: white;
+    background-color: white;
+    height: 20px;
+    letter-spacing: 1px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    color: #cc0000;
+    
+}
 
 /* Sponsor table information here ----------------------------------------- */
 

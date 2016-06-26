@@ -59,12 +59,12 @@
             <!--Main page content-->
             <h1>Buy a membership</h1>
             <!--form action="test.php"-->
-            <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+            <form>
             <table>
                 <tr>
                     <td></td>
                     <td class="Form2" colspan="2">
-                        Memberships are fifteen pounds. You can buy a membership at any of our events or 
+                        Memberships are fifteen pounds. You can buy a membership at any of our events or online.
                         Please enter your name and select your college. Be sure to check the email listed is correct. 
                         <br><br>You will receive an email with bank transfer instructions. If you prefer, you can bring fifteen pounds to the next engineering society event. <br><br>
                     </td>
@@ -151,12 +151,12 @@
                         Mailing List
                     </td>
                     <td class="Form2">
-                        <input type="checkbox" name="Mailing">
+                        <input type="checkbox" name="Mailing"  checked="true" > (Sign up for our mailing list)
                     </td>
                 </tr>
                 <tr>
                     <td></td><td></td>
-                    <td class="Form1_noline">
+                    <td class="Form2_noline">
                         <input type="submit" name="Test" style="border: 1px #cccccc solid; background-color: white; letter-spacing: 1px; text-transform: uppercase;" onclick="printEmail()">
                     </td>
                     <td class="Form2_noline"></td>
