@@ -67,7 +67,9 @@ img {
 
 
 table, tr, td {
-    border: 0px solid red; 
+    border-color: red;
+    border-style: solid;
+    border-width: 0px;
     border-collapse: collapse;
     padding-right: 20px;
     padding-bottom: 0px;
@@ -83,6 +85,11 @@ table, tr, td {
 
 }
 
+
+blockquote {
+    padding: 0px;
+    margin-left: 40px;
+}
 
 
 
@@ -107,7 +114,7 @@ a.TopBar {
 
 
 a.TopBar:hover {
-    color: #2E5AA9;
+    color: #0073e6;
     text-decoration: none;
     text-decoration-color: #ffff00;
 }
@@ -121,7 +128,7 @@ img.TopBar{
 
 
 td.TopBarLink {
-    height: 20px;
+    height: 15px;
     padding-right: 15px;
     border-bottom: 0px solid red;
     text-align: right;
@@ -144,7 +151,7 @@ a.TopBarInfo {
 
 
 a.TopBarInfo:hover {
-    color: #2E5AA9;
+    color: #0073e6;
     text-decoration: none;
     text-decoration-color: #ffff00;
 }
@@ -154,7 +161,9 @@ a.TopBarSelected {
     font: "arial";
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #2E5AA9;
+    text-decoration-style: wavy;
+    text-decoration: underline;
+    color: #0073e6;
     padding-left: 5px;
 }
 
@@ -215,6 +224,40 @@ td.BotBar_lower {
     color: #888888;
 }
 
+
+
+/* Alert box here -----------------------------------------------*/
+
+table.AlertBox {
+    border-style: dashed;
+    border-color: #aaaaaa;
+    border-width: 3px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0px;
+}
+
+td.AlertBox {
+    width:100px;  
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #004080;
+    text-align: right;
+    font-size:13px; 
+    letter-spacing: 3px;
+    padding-right: 6px;
+    background-color: #dddddd;
+}
+
+td.AlertInfo {
+    padding-left: 15px; 
+    background-color: #dddddd;
+    color: #333333;
+    font-size:13px; 
+    letter-spacing: 1px;
+    padding-top:10px;
+    border-bottom: 1px #ffffff solid;
+}
 
 
 /* Form information here ----------------------------------------- */
@@ -329,6 +372,7 @@ input.Error {
     padding-left: 5px;
     margin-bottom: 5px;
     color: #cc0000;
+    width: 200px;
     
 }
 

@@ -32,7 +32,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td> </td>
+                    <td class="TopBarLink">  </td>
                 </tr>
                 <tr>
                     <td class="TopBarLink">
@@ -57,25 +57,30 @@
         <div id="Main">
         
             <!--Main page content-->
-            <h1>Buy a membership</h1>
+            <h1>Join</h1>
+            
+            You can join the Oxford University Engineering Society by filling out the form below or signing up at one of our events. Membership is a fifteen pound contribution. <br><br>
+            
+            
             <!--form action="test.php"-->
-            <form>
+            <form method="post" action="mailto:itofficer@ouengsoc.org">
             <table>
                 <tr>
                     <td></td>
-                    <td class="Form2" colspan="2">
-                        Memberships are fifteen pounds. You can buy a membership at any of our events or online.
-                        Please enter your name and select your college. Be sure to check the email listed is correct. 
-                        <br><br>You will receive an email with bank transfer instructions. If you prefer, you can bring fifteen pounds to the next engineering society event. <br><br>
+                    <td class="Form2_dark" colspan="3">
+                        Please enter your name and select your college. Be sure to check the email listed is correct. Bring fifteen pounds to the next engineering society event to receive your EngSoc card. <br><br>
                     </td>
                 </tr>
                 <tr>
-                    <td width="100px"></td>
+                    <td width="10px"></td>
                     <td class="Form1_noline" width="150px">
                         First Name
                     </td>
+                    <td class="Form2_noline" width="100px">
+                        <input type="text" name="FirstName" id="FirstName" value="First" class="Form" onkeyup="javascript:printEmail('FirstName')" style="width: 192px"> 
+                    </td>
                     <td class="Form2_noline">
-                         <input type="text" name="FirstName" id="FirstName" value="First" class="Form"  onkeyup="javascript:printEmail()" > 
+                        <input type="text" name="errorFirstName" id="errorFirstName" class="Error" value="error" readonly="true" onclick="javascript:toggleAlert('HelpBox')" style="cursor: pointer;">
                     </td>
                 </tr>
                 <tr>
@@ -84,7 +89,10 @@
                         Last Name
                     </td>
                     <td class="Form2_noline">
-                        <input type="text" name="LastName" id="LastName" value="Last" class="Form" onkeyup="javascript:printEmail()" > 
+                        <input type="text" name="LastName" id="LastName" value="Last" class="Form" onkeyup="javascript:printEmail('LastName')" style="width: 192px" > 
+                    </td>
+                    <td class="Form2_noline">
+                        <input type="text" name="errorLastName" id="errorLastName" class="Error" value="error" readonly="true" onclick="javascript:toggleAlert('HelpBox')" style="cursor: pointer;">
                     </td>
                 </tr>
                 <tr>
@@ -93,7 +101,7 @@
                         College 
                     </td>
                     <td class="Form2">
-                        <select name="College" class="Form" id="College" onchange="javascript:printEmail()">
+                        <select name="College" class="Form" id="College" onchange="javascript:printCollege()" style="width: 205px;">
                             <option value="balliol" class="Form">Balliol</option>
                             <option value="bnc" class="Form">Brasenose</option>
                             <option value="chch" class="Form">Christ Church</option>
@@ -123,16 +131,18 @@
                             <option value="worc" class="Form">Worcester</option>
                         </select>
                     </td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td class="Form1">
                         Email 
                     </td>
-                    <td class="Form2">
+                    <td class="Form2" colspan="2">
                         <input type="text" name="Email" id="Email" class="Form_locked" style="width:300px" readonly="true" value="first.last@balliol.ox.ac.uk"> 
                     
                     </td>
+                    
                 </tr>
                 <!--<tr>
                     <td></td>
@@ -150,16 +160,17 @@
                     <td class="Form1">
                         Mailing List
                     </td>
-                    <td class="Form2">
+                        <td class="Form2" colspan="2">
                         <input type="checkbox" name="Mailing"  checked="true" > (Sign up for our mailing list)
                     </td>
                 </tr>
                 <tr>
                     <td></td><td></td>
                     <td class="Form2_noline">
-                        <input type="submit" name="Test" style="border: 1px #cccccc solid; background-color: white; letter-spacing: 1px; text-transform: uppercase;" onclick="printEmail()">
+                        <input type="submit" name="Test" style="border: 1px #cccccc solid; background-color: white; letter-spacing: 1px; text-transform: uppercase; color: #777777;" onclick="printEmail()">
                     </td>
                     <td class="Form2_noline"></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>
@@ -167,6 +178,30 @@
                 </tr>
             </table>
             </form>
+            
+            <br><br>
+            <br>
+            
+            <table id="HelpBox" class="AlertBox" style="display: block;" >
+                <tr>
+                    <td class="AlertBox" style="max-height: 40px; height: 50px;">
+                        Help
+                    </td>
+                    <td rowspan="2" class="AlertInfo"> 
+                        Only enter valid numbers and symbols. A-z, 0-9, and hyphens are accepted. Please double check your input for spaces. Invalid symbols are listed below. 
+                        <blockquote>/[!$%^& *()_+|~=`{}\[\]:";'<>?,.\/]</blockquote>
+                        <br>Please contact the IT Officer at <a href="mailto:itofficer@ouengsoc.org" target="_blank">itofficer@ouengsoc.org</a> with any bugs or issues.
+                            
+                        <br><br>
+                          
+                    </td>
+                </tr>
+                <tr>
+                    <td class="AlertBox" >x  </td>
+               
+
+                </tr>
+            </table>
             
 
             

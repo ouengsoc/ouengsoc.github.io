@@ -32,7 +32,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td> </td>
+                    <td class="TopBarLink">  </td>
                 </tr>
                 <tr>
                     <td class="TopBarLink">
@@ -59,9 +59,7 @@
             <!--Main page content-->
             <h1>Buy a membership</h1>
             
-            Memberships are fifteen pounds. You can buy a membership at any of our events or online.
-            <br>
-            To buy a membership online, fill out the form below. <br><br>
+            You can join the Oxford University Engineering Society by filling out the form below or signing up at one of our events. Membership is a fifteen pound contribution. <br><br>
             
             
             <!--form action="test.php"-->
@@ -70,12 +68,11 @@
                 <tr>
                     <td></td>
                     <td class="Form2_dark" colspan="3">
-                        Please enter your name and select your college. Be sure to check the email listed is correct. 
-                        <br><br>You will receive an email with bank transfer instructions. If you prefer, you can bring fifteen pounds to the next engineering society event. <br><br>
+                        Please enter your name and select your college. Be sure to check the email listed is correct. Bring fifteen pounds to the next engineering society event to receive your EngSoc card. <br><br>
                     </td>
                 </tr>
                 <tr>
-                    <td width="50px"></td>
+                    <td width="10px"></td>
                     <td class="Form1_noline" width="150px">
                         First Name
                     </td>
@@ -83,7 +80,7 @@
                         <input type="text" name="FirstName" id="FirstName" value="First" class="Form" onkeyup="javascript:printEmail('FirstName')" style="width: 192px"> 
                     </td>
                     <td class="Form2_noline">
-                        <input type="text" name="errorFirstName" id="errorFirstName" class="Error" value="error" readonly="true">
+                        <input type="text" name="errorFirstName" id="errorFirstName" class="Error" value="error" readonly="true" onclick="javascript:toggleAlert('HelpBox')" style="cursor: pointer;">
                     </td>
                 </tr>
                 <tr>
@@ -92,10 +89,10 @@
                         Last Name
                     </td>
                     <td class="Form2_noline">
-                        <input type="text" name="LastName" id="LastName" value="Last" class="Form" onkeyup="javascript:printEmail('LastName')" style="width: 192px"> 
+                        <input type="text" name="LastName" id="LastName" value="Last" class="Form" onkeyup="javascript:printEmail('LastName')" style="width: 192px" > 
                     </td>
                     <td class="Form2_noline">
-                        <input type="text" name="errorLastName" id="errorLastName" class="Error" value="error" readonly="true">
+                        <input type="text" name="errorLastName" id="errorLastName" class="Error" value="error" readonly="true" onclick="javascript:toggleAlert('HelpBox')" style="cursor: pointer;">
                     </td>
                 </tr>
                 <tr>
@@ -182,12 +179,27 @@
             </table>
             </form>
             
-            <table>
+            <br><br>
+            <br>
+            
+            <table id="HelpBox" class="AlertBox" style="display: block;" >
                 <tr>
-                    <td width="50px"></td>
-                    <td class="Form1" style="text-align:left; width: 100px;">
+                    <td class="AlertBox" style="max-height: 40px; height: 50px;">
                         Help
                     </td>
+                    <td rowspan="2" class="AlertInfo"> 
+                        Only enter valid numbers and symbols. A-z, 0-9, and hyphens are accepted. Please double check your input for spaces. Invalid symbols are listed below. 
+                        <blockquote>/[!$%^& *()_+|~=`{}\[\]:";'<>?,.\/]</blockquote>
+                        <br>Please contact the IT Officer at <a href="mailto:itofficer@ouengsoc.org" target="_blank">itofficer@ouengsoc.org</a> with any bugs or issues.
+                            
+                        <br><br>
+                          
+                    </td>
+                </tr>
+                <tr>
+                    <td class="AlertBox" >x  </td>
+               
+
                 </tr>
             </table>
             

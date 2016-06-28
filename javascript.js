@@ -3,7 +3,7 @@
 function printEmail(Identity) {
     var Error = "error" + Identity;
     var Value = document.getElementById(Identity).value;
-    var pattern = new RegExp(/[-!$%^& *()_+|~=`{}\[\]:";'<>?,.\/]/); //unacceptable chars
+    var pattern = new RegExp(/[!$%^& *()_+|~=`{}\[\]:";'<>?,.\/]/); //unacceptable chars
     if (pattern.test(Value) || (Value === "")) {
         document.getElementById(Error).style.visibility = 'visible';
         if (Value === "") {
@@ -31,5 +31,12 @@ function printCollege() {
 }
 
 
-function toggleHelp() {
+function toggleAlert(Identity) {
+    if (document.getElementById(Identity).style.display === "none") {
+        document.getElementById(Identity).style.display = "block";
+        return;
+    } else {
+        document.getElementById(Identity).style.display = "none";
+        return;
+    }
 }
