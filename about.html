@@ -7,8 +7,9 @@
         <title>Oxford University Engineering Society</title>
         <meta name="description" content="Oxford University Engineering Society">
         <link rel="stylesheet" href="/style/main.css">
+        <script language="JavaScript" src="/script/main.js"></script> 
     </head>
-    <body>
+    <body onload='setTime()'>
         
         
     <div id="Container">    
@@ -32,7 +33,8 @@
                 </tr>
                 <tr>
                     <td class="TopBarLink">
-                        <a href="/index.html" class="TopBarSelected">Home</a> | 
+                        <a href="/index.html" class="TopBar">Home</a> | 
+                        <a href="/about.html" class="TopBarSelected">About</a> | 
                         <a href="/join.html" class="TopBar">Join</a>  | 
                         <a href="/events.html" class="TopBar">Events</a> | 
                         <a href="/contact.html" class="TopBar">Contact</a>   |           
@@ -53,10 +55,9 @@
         <div id="Main">
         
             <!--Main page content-->
-            <h1>Home</h1>
+            <h1>Committee Members</h1>
             <center> 
             <br><br><br>
-                Welcome to the Oxford University Engineering Society home page.
             
             </center>
              
@@ -69,8 +70,7 @@
                         Copyright 2016 MMQ -- Made for Oxford University Engineering Society
                     </td>
                 <tr>
-                    <td class="BotBar_lower">
-                        Last update 25/06/2016
+                    <td class="BotBar_lower" id="UpdateTime_Loader">
                     </td>
                 </tr>
        

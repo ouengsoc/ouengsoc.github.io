@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html>
     
-    <script language="JavaScript" src="/script/javascript.js">
-
-    </script>
-    
+    <script language="JavaScript" src="/script/join.js"></script>    
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Oxford University Engineering Society</title>
         <meta name="description" content="Oxford University Engineering Society">
         <link rel="stylesheet" href="/style/main.css">
+        <script language="JavaScript" src="/script/main.js"></script> 
     </head>
-    <body>
-        
-        
+    <body onload="setTime()">
     <div id="Container">    
         <div id="TopBar">
             <table class="TopBar">
@@ -37,6 +33,7 @@
                 <tr>
                     <td class="TopBarLink">
                         <a href="/index.html" class="TopBar">Home</a> | 
+                        <a href="/about.html" class="TopBar">About</a>  | 
                         <a href="/join.html" class="TopBarSelected">Join</a>  | 
                         <a href="/events.html" class="TopBar">Events</a> | 
                         <a href="/contact.html" class="TopBar">Contact</a>   |           
@@ -57,8 +54,7 @@
         <div id="Main">
         
             <!--Main page content-->
-            <h1>Join</h1>
-            
+            <br>
             You can join the Oxford University Engineering Society by filling out the form below or signing up at one of our events. <br><br>
             Membership is a fifteen pound contribution. If you choose to register as a member, bring fifteen pounds to the next engineering society event to receive your EngSoc card.  Please allow for a maximum 2-3 days processing time. <br><br>
             
@@ -155,19 +151,19 @@
                         </td>
                     </tr>-->
                     <tr>
-                        <td></td><td class="Form1">
+                        <td></td><td class="Form1_noline">
                             <font color="">Membership</font>
                         </td>
-                        <td class="Form2" colspan="2">
-                            <input type="checkbox" name="Membership"  > <i>Register to buy a membership. Card pickup at next EngSoc event.</i>
+                        <td class="Form2_noline" colspan="2">
+                            <input type="checkbox" name="RegisterMembership"  > <i>Register to buy a membership. Card pickup at next EngSoc event.</i>
                         </td>
                     </tr>
                     <tr>
-                        <td></td><td class="Form1_noline">
+                        <td></td><td class="Form1">
                             <font color="">Mailing List</font>
                         </td>
-                        <td class="Form2_noline" colspan="2">
-                            <input type="checkbox" name="Mailing"  checked> <i>Sign up for our mailing list.</i>
+                        <td class="Form2" colspan="2">
+                            <input type="checkbox" name="RegisterMailing"  checked> <i>Sign up for our mailing list.</i>
                         </td>
                     </tr>
                     <tr>
@@ -230,8 +226,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="BotBar_lower">
-                        Last update 25/06/2016
+                    <td class="BotBar_lower" id="UpdateTime_Loader">
                     </td>
                 </tr>
        

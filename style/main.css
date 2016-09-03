@@ -11,6 +11,7 @@ body {
     background-color: #eeeeee;
     margin-bottom: 5px;
     padding-bottom: 5px;
+    overflow-y: scroll;
 }
 
 
@@ -27,6 +28,7 @@ h1 {
     color:  #1F3264;
     font-size: 25px;
     opacity: .8;
+    letter-spacing: 3px;
 }
 
 h2 {
@@ -81,7 +83,7 @@ table, tr, td {
     min-width: 800px;
     max-width: 950px;
     margin: 0 auto;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 
 }
 
@@ -183,9 +185,9 @@ td.TopBarLink {
 
 #Main {
     border: 0px solid #999999;
-    margin: 0px auto;
+    margin: 3px ;
     margin-top: 30px;
-    padding: 1em 2em 4em;
+    padding: 1em;
     background-color: #ffffff;
     min-height: 400px;
 }
