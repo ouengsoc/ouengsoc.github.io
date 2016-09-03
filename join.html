@@ -67,131 +67,119 @@
             
             
             <form action="https://formspree.io/muyi.qiu@ouengsoc.org" method="POST">
-            <table width="100%">
-                <tr>
-                    <td></td>
-                    <td class="Form2_dark" colspan="3" style="padding-bottom: 20px;">
-                        Please enter your name and select your college. Be sure to check the email listed is correct. 
-                    </td>
-                </tr>
-                <tr>
-                    <td width="10px"></td>
-                    <td class="Form1_noline" width="150px">
-                        First Name
-                    </td>
-                    <td class="Form2_noline" width="100px">
-                        <input type="text" name="FirstName" id="FirstName" placeholder="First" class="Form" onkeyup="javascript:printEmail('FirstName')" style="width: 250px"> 
-                    </td>
-                    <td class="Form2_noline">
-                        <input type="text"  id="errorFirstName" class="Error" value="error" readonly="true" onclick="javascript:toggleAlert('HelpBox')" style="cursor: pointer;">
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="Form1_noline">
-                        Last Name
-                    </td>
-                    <td class="Form2_noline">
-                        <input type="text" name="LastName" id="LastName" placeholder="Last" class="Form" onkeyup="javascript:printEmail('LastName')" style="width: 250px" > 
-                    </td>
-                    <td class="Form2_noline">
-                        <input type="text"  id="errorLastName" class="Error" value="error" readonly="true" onclick="javascript:toggleAlert('HelpBox')" style="cursor: pointer;">
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="Form1">
-                        College 
-                    </td>
-                    <td class="Form2">
-                        <select name="College" class="Form" id="College" onchange="javascript:printCollege()" style="width: 263px;">
-                            <option value="balliol" class="Form">Balliol</option>
-                            <option value="bnc" class="Form">Brasenose</option>
-                            <option value="chch" class="Form">Christ Church</option>
-                            <option value="exeter" class="Form">Exeter</option>
-                            <option value="hmc" class="Form">Harris Manchester</option>
-                            <option value="hertford" class="Form">Hertford</option>
-                            <option value="jesus" class="Form">Jesus</option>
-                            <option value="keble" class="Form">Keble</option>
-                            <option value="lmh" class="Form">Lady Margaret Hall</option>
-                            <option value="lincoln" class="Form">Lincoln</option>
-                            <option value="magd" class="Form">Magdalen</option>
-                            <option value="mansfield" class="Form">Mansfield</option>
-                            <option value="new" class="Form">New</option>
-                            <option value="oriel" class="Form">Oriel</option>
-                            <option value="pmb" class="Form">Pembroke</option>
-                            <option value="st-annes" class="Form">St Anne's</option>
-                            <option value="stcatz" class="Form">St Catherine's</option>
-                            <option value="seh" class="Form">St Edmund Hall</option>
-                            <option value="st-hildas" class="Form">St Hilda's</option>
-                            <option value="st-hughs" class="Form">St Hugh's</option>
-                            <option value="sjc" class="Form">St John's</option>
-                            <option value="spc" class="Form">St Peter's</option>
-                            <option value="some" class="Form">Somerville</option>
-                            <option value="trinity" class="Form">Trinity</option>
-                            <option value="univ" class="Form">University</option>
-                            <option value="wadh" class="Form">Wadham</option>
-                            <option value="worc" class="Form">Worcester</option>
-                        </select>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="Form1">
-                        Email 
-                    </td>
-                    <td class="Form2" colspan="2">
-                        <input type="text" name="_replyto" id="Email" class="Form_locked" style="width:500px" readonly="true" value="first.last@balliol.ox.ac.uk"> 
-                    
-                    </td>
-                    
-                </tr>
-                <!--<tr>
-                    <td></td>
-                    <td class="Form1_noline">
-                        Student Type
-                    </td>
-                    <td class="Form2_noline" colspan="1">
-                        Undergrad <input type="radio" name="StudentType" value="Undergrad" selected>
-                        Grad Student <input type="radio" name="StudentType" value="Grad">
-                    </td>
-                </tr>-->
-                <tr>
-                    <td></td>
-                    
-                    <td class="Form1">
-                        <font color="">Membership</font>
-                    </td>
+                <input type="hidden" name="_next" value="/sub/thanks.html" />
+                <input type="hidden" name="_subject" value="formspreejoin" />
+                <input type="hidden" name="_format" value="plain" />
+                <input type="text" name="_gotcha" style="display:none" />
+                <table width="100%">
+                    <tr>
+                        <td></td><td class="Form2_dark" colspan="3" style="padding-bottom: 20px;">
+                            Please enter your name and select your college. Be sure to check the email listed is correct. 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="10px"></td><td class="Form1_noline" width="150px">
+                            First Name
+                        </td>
+                        <td class="Form2_noline" width="100px">
+                            <input type="text" name="FirstName" id="FirstName" placeholder="First" class="Form" onkeyup="javascript:printEmail('FirstName')" style="width: 250px"> 
+                        </td>
+                        <td class="Form2_noline">
+                            <input type="text"  id="errorFirstName" class="Error" value="error" readonly="true" onclick="javascript:toggleAlert('HelpBox')" style="cursor: pointer;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td><td class="Form1_noline">
+                            Last Name
+                        </td>
+                        <td class="Form2_noline">
+                            <input type="text" name="LastName" id="LastName" placeholder="Last" class="Form" onkeyup="javascript:printEmail('LastName')" style="width: 250px" > 
+                        </td>
+                        <td class="Form2_noline">
+                            <input type="text"  id="errorLastName" class="Error" value="error" readonly="true" onclick="javascript:toggleAlert('HelpBox')" style="cursor: pointer;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td><td class="Form1">
+                            College 
+                        </td>
+                        <td class="Form2">
+                            <select name="College" class="Form" id="College" onchange="javascript:printCollege()" style="width: 263px;">
+                                <option value="balliol" class="Form">Balliol</option>
+                                <option value="bnc" class="Form">Brasenose</option>
+                                <option value="chch" class="Form">Christ Church</option>
+                                <option value="exeter" class="Form">Exeter</option>
+                                <option value="hmc" class="Form">Harris Manchester</option>
+                                <option value="hertford" class="Form">Hertford</option>
+                                <option value="jesus" class="Form">Jesus</option>
+                                <option value="keble" class="Form">Keble</option>
+                                <option value="lmh" class="Form">Lady Margaret Hall</option>
+                                <option value="lincoln" class="Form">Lincoln</option>
+                                <option value="magd" class="Form">Magdalen</option>
+                                <option value="mansfield" class="Form">Mansfield</option>
+                                <option value="new" class="Form">New</option>
+                                <option value="oriel" class="Form">Oriel</option>
+                                <option value="pmb" class="Form">Pembroke</option>
+                                <option value="st-annes" class="Form">St Anne's</option>
+                                <option value="stcatz" class="Form">St Catherine's</option>
+                                <option value="seh" class="Form">St Edmund Hall</option>
+                                <option value="st-hildas" class="Form">St Hilda's</option>
+                                <option value="st-hughs" class="Form">St Hugh's</option>
+                                <option value="sjc" class="Form">St John's</option>
+                                <option value="spc" class="Form">St Peter's</option>
+                                <option value="some" class="Form">Somerville</option>
+                                <option value="trinity" class="Form">Trinity</option>
+                                <option value="univ" class="Form">University</option>
+                                <option value="wadh" class="Form">Wadham</option>
+                                <option value="worc" class="Form">Worcester</option>
+                            </select>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="Form1">
+                            Email 
+                        </td>
                         <td class="Form2" colspan="2">
-                        <input type="checkbox" name="Membership"  > <i>Register to buy a membership. Card pickup at next EngSoc event.</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    
-                    <td class="Form1_noline">
-                        <font color="">Mailing List</font>
-                    </td>
+                            <input type="text" name="_replyto" id="Email" class="Form_locked" style="width:500px" readonly="true" value="first.last@balliol.ox.ac.uk"> 
+                        </td>
+                    </tr>
+                    <!--<tr>
+                        <td></td><td class="Form1_noline">
+                            Student Type
+                        </td>
+                        <td class="Form2_noline" colspan="1">
+                            Undergrad <input type="radio" name="StudentType" value="Undergrad" selected>
+                            Grad Student <input type="radio" name="StudentType" value="Grad">
+                        </td>
+                    </tr>-->
+                    <tr>
+                        <td></td><td class="Form1">
+                            <font color="">Membership</font>
+                        </td>
+                        <td class="Form2" colspan="2">
+                            <input type="checkbox" name="Membership"  > <i>Register to buy a membership. Card pickup at next EngSoc event.</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td><td class="Form1_noline">
+                            <font color="">Mailing List</font>
+                        </td>
                         <td class="Form2_noline" colspan="2">
-                        <input type="checkbox" name="Mailing"  checked> <i>Sign up for our mailing list.</i>
-                    </td>
-                </tr>
-
-                <tr>
-                    <input type="hidden" name="_next" value="/sub/thanks.html" />
-                    <input type="hidden" name="_subject" value="Join Form" />
-                    <input type="hidden" name="_format" value="plain" />
-                    <input type="text" name="_gotcha" style="display:none" />
-                    <td></td><td></td>
-                    <td class="Form2_noline">
-                        <input type="submit" name="Test" style="border: 1px #cccccc solid; background-color: white; letter-spacing: 1px; text-transform: uppercase; color: #777777;" value="Send">
-                    </td>
-                    <td class="Form2_noline"></td>
-                    <td></td>
-                </tr>
-                <tr><td></td></tr>
-            </table>
+                            <input type="checkbox" name="Mailing"  checked> <i>Sign up for our mailing list.</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td>
+                        <td class="Form2_noline">
+                            <input type="submit" style="border: 1px #cccccc solid; background-color: white; letter-spacing: 1px; text-transform: uppercase; color: #777777;" value="Send">
+                        </td>
+                        <td class="Form2_noline"></td>
+                        <td></td>
+                    </tr>
+                    <tr><td></td></tr>
+                </table>
             </form>
             
             <br><br>
