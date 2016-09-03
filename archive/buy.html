@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     
-    <script language="JavaScript" src="/script/javascript.js">
+    <script language="JavaScript" src="javascript.js">
 
     </script>
     
@@ -10,7 +10,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Oxford University Engineering Society</title>
         <meta name="description" content="Oxford University Engineering Society">
-        <link rel="stylesheet" href="/style/main.css">
+        <link rel="stylesheet" href="style/main.css">
     </head>
     <body>
         
@@ -20,7 +20,7 @@
             <table class="TopBar">
                 <tr>
                     <td rowspan="5">
-                        <a href="/index.html"><img src="/image/logo.png" class="TopBar"></a>
+                        <a href="index.html"><img src="Logo.png" class="TopBar"></a>
                     </td>
                     <td class="TopBarLink">
                         <a href="mailto:president@ouengsoc.org" class="TopBarInfo" target="_blank">president@ouengsoc.org</a>
@@ -36,11 +36,11 @@
                 </tr>
                 <tr>
                     <td class="TopBarLink">
-                        <a href="/index.html" class="TopBar">Home</a> | 
-                        <a href="/join.html" class="TopBarSelected">Join</a>  | 
-                        <a href="/events.html" class="TopBar">Events</a> | 
-                        <a href="/contact.html" class="TopBar">Contact</a>   |           
-                        <a href="/sponsors.html" class="TopBar">Sponsors</a> 
+                        <a href="index.html" class="TopBar">Home</a> | 
+                        <a href="join.html" class="TopBarSelected">Join</a>  | 
+                        <a href="events.html" class="TopBar">Events</a> | 
+                        <a href="contact.html" class="TopBar">Contact Us</a>   |           
+                        <a href="sponsors.html" class="TopBar">Our Sponsors</a> 
                     </td>    
                 </tr>
                 <tr>
@@ -57,21 +57,18 @@
         <div id="Main">
         
             <!--Main page content-->
-            <h1>Join</h1>
+            <h1>Buy a membership</h1>
             
-            You can join the Oxford University Engineering Society by filling out the form below or signing up at one of our events. <br><br>
-            Membership is a fifteen pound contribution. If you choose to register as a member, bring fifteen pounds to the next engineering society event to receive your EngSoc card.  Please allow for a maximum 2-3 days processing time. <br><br>
-            
-            
-            <!--Begin form --------------------------------------------------------------------------------------------------------------- -->
+            You can join the Oxford University Engineering Society by filling out the form below or signing up at one of our events. Membership is a fifteen pound contribution. <br><br>
             
             
-            <form action="https://formspree.io/muyi.qiu@ouengsoc.org">
-            <table width="100%">
+            <!--form action="test.php"-->
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+            <table>
                 <tr>
                     <td></td>
-                    <td class="Form2_dark" colspan="3" style="padding-bottom: 20px;">
-                        Please enter your name and select your college. Be sure to check the email listed is correct. 
+                    <td class="Form2_dark" colspan="3">
+                        Please enter your name and select your college. Be sure to check the email listed is correct. Bring fifteen pounds to the next engineering society event to receive your EngSoc card. <br><br>
                     </td>
                 </tr>
                 <tr>
@@ -80,10 +77,10 @@
                         First Name
                     </td>
                     <td class="Form2_noline" width="100px">
-                        <input type="text" name="FirstName" id="FirstName" placeholder="First" class="Form" onkeyup="javascript:printEmail('FirstName')" style="width: 250px"> 
+                        <input type="text" name="FirstName" id="FirstName" value="First" class="Form" onkeyup="javascript:printEmail('FirstName')" style="width: 192px"> 
                     </td>
                     <td class="Form2_noline">
-                        <input type="text"  id="errorFirstName" class="Error" value="error" readonly="true" onclick="javascript:toggleAlert('HelpBox')" style="cursor: pointer;">
+                        <input type="text" name="errorFirstName" id="errorFirstName" class="Error" value="error" readonly="true" onclick="javascript:toggleAlert('HelpBox')" style="cursor: pointer;">
                     </td>
                 </tr>
                 <tr>
@@ -92,10 +89,10 @@
                         Last Name
                     </td>
                     <td class="Form2_noline">
-                        <input type="text" name="LastName" id="LastName" placeholder="Last" class="Form" onkeyup="javascript:printEmail('LastName')" style="width: 250px" > 
+                        <input type="text" name="LastName" id="LastName" value="Last" class="Form" onkeyup="javascript:printEmail('LastName')" style="width: 192px" > 
                     </td>
                     <td class="Form2_noline">
-                        <input type="text"  id="errorLastName" class="Error" value="error" readonly="true" onclick="javascript:toggleAlert('HelpBox')" style="cursor: pointer;">
+                        <input type="text" name="errorLastName" id="errorLastName" class="Error" value="error" readonly="true" onclick="javascript:toggleAlert('HelpBox')" style="cursor: pointer;">
                     </td>
                 </tr>
                 <tr>
@@ -104,7 +101,7 @@
                         College 
                     </td>
                     <td class="Form2">
-                        <select name="College" class="Form" id="College" onchange="javascript:printCollege()" style="width: 263px;">
+                        <select name="College" class="Form" id="College" onchange="javascript:printCollege()" style="width: 205px;">
                             <option value="balliol" class="Form">Balliol</option>
                             <option value="bnc" class="Form">Brasenose</option>
                             <option value="chch" class="Form">Christ Church</option>
@@ -142,7 +139,7 @@
                         Email 
                     </td>
                     <td class="Form2" colspan="2">
-                        <input type="text" name="_replyto" id="Email" class="Form_locked" style="width:500px" readonly="true" value="first.last@balliol.ox.ac.uk"> 
+                        <input type="text" name="Email" id="Email" class="Form_locked" style="width:300px" readonly="true" value="first.last@balliol.ox.ac.uk"> 
                     
                     </td>
                     
@@ -161,43 +158,31 @@
                     <td></td>
                     
                     <td class="Form1">
-                        <font color="">Membership</font>
+                        Mailing List
                     </td>
                         <td class="Form2" colspan="2">
-                        <input type="checkbox" name="Membership"  > <i>Register to buy a membership. Card pickup at next EngSoc event.</i>
+                        <input type="checkbox" name="Mailing"  checked="true" > (Sign up for our mailing list)
                     </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    
-                    <td class="Form1_noline">
-                        <font color="">Mailing List</font>
-                    </td>
-                        <td class="Form2_noline" colspan="2">
-                        <input type="checkbox" name="Mailing"  checked> <i>Sign up for our mailing list.</i>
-                    </td>
-                </tr>
-
-                <tr>
-                    <input type="hidden" name="_next" value="/sub/thanks.html" />
-                    <input type="hidden" name="_subject" value="Join Form" />
-                    <input type="hidden" name="_format" value="plain" />
-                    <input type="text" name="_gotcha" style="display:none" />
                     <td></td><td></td>
                     <td class="Form2_noline">
-                        <input type="submit" name="Test" style="border: 1px #cccccc solid; background-color: white; letter-spacing: 1px; text-transform: uppercase; color: #777777;" value="Send">
+                        <input type="submit" name="Test" style="border: 1px #cccccc solid; background-color: white; letter-spacing: 1px; text-transform: uppercase; color: #777777;" onclick="printEmail()">
                     </td>
                     <td class="Form2_noline"></td>
                     <td></td>
                 </tr>
-                <tr><td></td></tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
             </table>
             </form>
             
             <br><br>
             <br>
             
-            <table id="HelpBox" class="AlertBox" style="display: none;" >
+            <table id="HelpBox" class="AlertBox" style="display: block;" >
                 <tr>
                     <td class="AlertBox" style="max-height: 40px; height: 50px;">
                         Help
@@ -205,14 +190,14 @@
                     <td rowspan="2" class="AlertInfo"> 
                         Only enter valid numbers and symbols. A-z, 0-9, and hyphens are accepted. Please double check your input for spaces. Invalid symbols are listed below. 
                         <blockquote>/[!$%^& *()_+|~=`{}\[\]:";'<>?,.\/]</blockquote>
-                        <br>Please contact the IT Officer at <a href="mailto:muyi.qiu@ouengsoc.org" target="_blank">muyi.qiu@ouengsoc.org</a> with any bugs or issues.
+                        <br>Please contact the IT Officer at <a href="mailto:itofficer@ouengsoc.org" target="_blank">itofficer@ouengsoc.org</a> with any bugs or issues.
                             
                         <br><br>
                           
                     </td>
                 </tr>
                 <tr>
-                    <td class="AlertBox" > </td>
+                    <td class="AlertBox" >x  </td>
                
 
                 </tr>
@@ -240,7 +225,6 @@
                     <td class="BotBar">
                         Copyright 2016 MMQ -- Made for Oxford University Engineering Society
                     </td>
-                </tr>
                 <tr>
                     <td class="BotBar_lower">
                         Last update 25/06/2016
