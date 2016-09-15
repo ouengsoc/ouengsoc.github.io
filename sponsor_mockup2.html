@@ -7,11 +7,12 @@
         <title>Oxford University Engineering Society</title>
         <meta name="description" content="Oxford University Engineering Society">
         <link rel="stylesheet" href="/style/main.css">
+        <link rel="stylesheet" href="/style/sponsors.css">        
+        <script language='JavaScript' src='/script/sponsors.js'></script> 
         <script language="JavaScript" src="/script/main.js"></script> 
     </head>
     <body onload="setTime()">
             
-        
     <div id="Container">    
         <div id="TopBar">
             <table class="TopBar">
@@ -53,41 +54,40 @@
 
         
         <div id="Main">
-            
-            <h1>Our Sponsors</h1>
-            <br><br>
+     
             <center>
         
             <!-- Image table for our sponsors -->
             <!-- Gold Sponsors-->
+            
+                <h1 class='Sponsors'>Gold Sponsors</h1>
             <table class="Sponsor">
                 <tr>
                     <td class="Sponsor">
-                        <img src="image/sponsors/schlumberger.ashx" class="SponsorGold">
+                        <img src="image/sponsors/placeholder.png" class="SponsorGold" onclick='javascript:toggleOverlay("placeholder")'>
                     </td>
                        <td class="Sponsor">
-                       <img src="image/sponsors/baml.jpg" class="SponsorGold">
+                       <img src="image/sponsors/placeholder.png" class="SponsorGold" onclick='javascript:toggleOverlay("placeholder")'>
                     </td>
              
                 </tr>
             </table>
                 
-                <br><br><br>
             
             <!-- Silver Sponsors-->
             <table>
                 <tr>
                     <td class="SponsorSilver">
-                       <img src="image/sponsors/halma.jpg" class="SponsorSilver">
+                       <img src="image/sponsors/placeholder.png" class="SponsorSilver" onclick='javascript:toggleOverlay("placeholder")'>
                     </td>
                     <td class="SponsorSilver">
-                        <img src="image/sponsors/jak.png" class="SponsorSilver">
+                        <img src="image/sponsors/placeholder.png" class="SponsorSilver" onclick='javascript:toggleOverlay("placeholder")'>
                     </td>       
                     <td class="SponsorSilver">
-                        <img src="image/sponsors/shell.jpg" class="SponsorSilver">
+                        <img src="image/sponsors/placeholder.png" class="SponsorSilver" onclick='javascript:toggleOverlay("placeholder")'>
                     </td>
                      <td class="SponsorSilver">
-                        <img src="image/sponsors/palantir.png" class="SponsorSilver">
+                        <img src="image/sponsors/placeholder.png" class="SponsorSilver" onclick='javascript:toggleOverlay("placeholder")'>
                     </td>
                 
                 </tr>
@@ -97,32 +97,56 @@
             <table>   
                 <tr>
                    <td class="SponsorBronze">
-                        <img src="image/sponsors/newton.jpg" class="SponsorBronze">
+                        <img src="image/sponsors/placeholder.png" class="SponsorBronze" onclick='javascript:toggleOverlay("placeholder")'>
                     </td>
                     <td class="SponsorBronze">
-                        <img src="image/sponsors/arup.png" class="SponsorBronze">
+                        <img src="image/sponsors/placeholder.png" class="SponsorBronze" onclick='javascript:toggleOverlay("placeholder")'>
                     </td>
                     <td class="SponsorBronze">
-                       <img src="image/sponsors/unilever.jpg" class="SponsorBronzePlus">
+                       <img src="image/sponsors/placeholder.png" class="SponsorBronzePlus" onclick='javascript:toggleOverlay("placeholder")'>
                     </td>
                      <td class="SponsorBronze">
-                        <img src="image/sponsors/jlr.jpg" class="SponsorBronze">
+                        <img src="image/sponsors/placeholder.png" class="SponsorBronze" onclick='javascript:toggleOverlay("placeholder")'> 
                     </td>
                      <td class="SponsorBronze">
-                        <img src="image/sponsors/Bp.jpeg" class="SponsorBronze">
+                        <img src="image/sponsors/placeholder.png" class="SponsorBronze" onclick='javascript:toggleOverlay("placeholder")'>
                     </td>
                 </tr>
                 
                 
             
             </table>
-        
+           <div id="Fade" onclick='javascript:toggleOverlay("placeholder")'>   
+            </div>
+            <div id="Overlay" >
+                <div id="OverlayClose" onclick='javascript:toggleOverlay();'>Close</div>
+                    <table class='Gold' id='placeholder'>
+                        <tr>
+                            <td class='GoldImg'>
+                                    <img src="image/sponsors/placeholder.png"  class="GoldImg" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class='GoldContent'>
+                                <div id='Summary1'>
+                                    Summary goes here, max char count probably around 600 characters  Summary goes here, max char count probably around 600 characters  Summary goes here, max char count probably around 600 characters  Summary goes here, max char count probably around 600 characters  Summary goes here, max char count probably around 600 characters  Summary goes here, max char count probably around 600 characters  Summary goes here, max char count probably around 600 characters  
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class='GoldLinks'>
+                                <a href=# class='GoldLinks'>link 1</a> | 
+                                <a href=# class='GoldLinks'>Link_Facebook</a> |
+                                <a href=# class='GoldLinks'>Custom_Link</a>
+                            </td>
+                        </tr>
+                    </table>
+            </div>
         
         </center>
             
-            
     </div>
-          
+     
 
                
               <div id="BotBar">
@@ -141,6 +165,8 @@
         </div>
         </div>
 
+         
+        
     </body>
         
 </html>
