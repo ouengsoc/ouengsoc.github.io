@@ -14,3 +14,9 @@ Checklist for 2016-2017 IT development
 2.     Update newsletter
 3.     OUEngSoc email address for members
 4.     OUEngSoc member database
+
+
+Fix alert box
+add checks in join form to make sure all data is input correctly
+use cookies to keep track of session, send email to thanks page
+add cookies disclaimer

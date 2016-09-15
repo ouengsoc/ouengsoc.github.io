@@ -1,0 +1,120 @@
+
+h1.Sponsors {
+    color: #aaaaaa;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* Gold ------------------------------------------------------------------------*/
+
+table.Gold {
+    width: 85%;
+    margin: auto;
+}
+
+img.GoldImg {
+    width: 100%;
+    margin: auto;
+}
+
+img.GoldImg:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+td.GoldImg {
+    margin: auto;
+    padding: 10px;
+    border-bottom: #cccccc 1px solid;
+}
+
+a.GoldImg {}
+
+td.GoldContent{    
+    width: 80%;
+    max-width: 80%;
+    margin: auto;
+    color: #777777;
+    border-left: #aaaaaa 0px solid;
+    padding-left: 20px;
+    padding-top: 3px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+td.GoldLinks {
+    padding-top: 10px;
+    padding-left: 20px;
+    color: #999999;
+    font-size: 12px;    
+}
+
+a.GoldLinks {
+    text-transform: uppercase;
+    color: #999999;
+    font-size: 12px;    
+}
+
+a.GoldLinks:hover {
+    color: #666666;
+}
+
+#Summary {
+    display: none;
+}
+
+
+/* Silver ----------------------------------------------------------------------*/
+
+img.SilverImg {
+    width: 200px;
+    border: black 0px solid;
+}
+
+td.SilverImg {
+    width: 200px;
+    border: red 0px solid;
+    padding: 0px;
+    padding-top: 10px;
+}
+
+h2.SilverName {
+    text-decoration: none;
+    text-transform: none;
+    font-style: normal;
+    border-bottom-width: 0px;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 20px;
+}
+
+td.SilverContent {
+    color: #777777;
+    border-left: #aaaaaa 1px solid;
+    padding-left: 20px;
+    padding-top: 3px;
+    text-align: justify;
+    font-size: 14px;
+    max-height: 150px;
+}
+
+td.SilverLinks {
+    padding-left: 20px;
+    color: #999999;
+    font-size: 12px;
+}
+
+a.SilverLinks {
+    text-transform: uppercase;
+    color: #999999;
+    font-size: 12px;
+}
+
+a.SilverLinks:hover {
+    color: #666666;
+}
+
+
+
