@@ -396,6 +396,67 @@ input.Error {
     cursor: pointer;
 }
 
+/* Sponsor table information here ----------------------------------------- */
+
+
+
+table.Sponsor {
+    border: 0px solid black;
+    border-collapse: collapse;
+}
+
+
+td.Sponsor {
+    border: 0px solid red;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+td.SponsorBronze {
+    max-width: 100px;
+    width: 17%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+td.SponsorSilver {
+    max-width: 190px;
+    width: 23%;
+}
+
+
+.SponsorGold {
+    max-width: 300px;
+    border: 0px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: .9;
+}
+
+
+.SponsorSilver {
+    max-width: 190px;
+    border: 0px solid red;
+    opacity: .75;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.SponsorBronzePlus {
+    max-width: 120px;
+    opacity: .8;
+}
+
+
+.SponsorBronze {
+    max-width: 100px;
+    opacity: .8;
+}
+
+
 
 
 
