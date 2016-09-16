@@ -1,5 +1,5 @@
 
-h1.Sponsors {
+h1.spsrs {
     color: #aaaaaa;
     padding: 10px;
     margin: auto;
@@ -55,11 +55,11 @@ h1.Sponsors {
 
 /* Sponsor table information here ----------------------------------------- */
 
-img.Sponsor:hover {
+img.spsr:hover {
     opacity: 0.5;
 }
 
-table.Sponsor {
+table.spsr {
     border: 0px solid black;
     border-collapse: collapse;
     margin-bottom: 30px;  
@@ -67,7 +67,7 @@ table.Sponsor {
 }
 
 
-td.Sponsor {
+td.spsr {
     border: 0px solid red;
     padding-left: 20px;
     padding-right: 20px;
@@ -75,7 +75,7 @@ td.Sponsor {
 }
 
 
-td.SponsorBronze {
+td.spsrBronze {
     max-width: 100px;
     width: 17%;
     padding-left: 30px;
@@ -83,13 +83,13 @@ td.SponsorBronze {
 }
 
 
-td.SponsorSilver {
+td.spsrSilver {
     max-width: 190px;
     width: 23%;
 }
 
 
-.SponsorGold {
+.spsrGold {
     max-width: 300px;
     border: 0px solid black;
     padding-left: 20px;
@@ -99,7 +99,7 @@ td.SponsorSilver {
 
 
 
-.SponsorSilver {
+.spsrSilver {
     max-width: 190px;
     border: 0px solid red;
     opacity: .75;
@@ -107,24 +107,24 @@ td.SponsorSilver {
     padding-right: 10px;
 }
 
-.SponsorSilver:hover {
+.spsrSilver:hover {
     opacity: .6;
     cursor: pointer;
 }
 
-.SponsorBronzePlus {
+.spsrBronzePlus {
     max-width: 120px;
     opacity: .8;
 }
 
 
 
-.SponsorBronze {
+.spsrBronze {
     max-width: 100px;
     opacity: .8;
 }
 
-.SponsorBronze:hover,.SponsorBronzePlus:hover, .SponsorSilver:hover , .SponsorGold:hover {
+.spsrBronze:hover,.spsrBronzePlus:hover, .spsrSilver:hover , .spsrGold:hover {
     opacity: .6;
     cursor: pointer;
 }
