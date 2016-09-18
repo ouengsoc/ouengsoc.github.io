@@ -356,6 +356,11 @@ input.Submit {
     color: #777777;
 }
 
+input.Submit:disabled {
+    opacity: 0.65;
+    background-color: #cccccc;
+}
+
 select.Form {
     background-color: white;
     border: 1px #cccccc solid;

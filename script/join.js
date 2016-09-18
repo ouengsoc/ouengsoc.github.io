@@ -3,6 +3,7 @@
 var flag_FirstName = 0;
 var flag_LastName = 0;
 var flag_checkbox = 1;
+var button_check = 0;
 
 function printEmail(Identity) {
     var Error = 'error' + Identity;
@@ -18,9 +19,11 @@ function printEmail(Identity) {
         document.getElementById(Error).style.visibility = 'visible'; // display error message
         if (Value === '') {
             document.getElementById(Error).value = 'error - no value entered [?]';
+            document.getElementById('Send').disabled = true;
             return;
         } else {
             document.getElementById(Error).value = 'error - invalid symbol [?]';
+            document.getElementById('Send').disabled = true;
             return;
         }
     }
@@ -41,6 +44,9 @@ function printEmail(Identity) {
     if (LastName === '') {
         LastName = 'Last';
     }
+    if (flag_checkbox+flag_FirstName+flag_LastName === 3) {
+        document.getElementById('Send').disabled = false;
+    }
     var FullEmail = FirstName + '.' + LastName + '@' + College + '.ox.ac.uk';
     document.getElementById('Email').value = FullEmail;
     document.getElementById('nextPage').value = '/sub/thanks.html#email=' + FullEmail;
@@ -53,19 +59,27 @@ function printCollege() {
     var College = document.getElementById('College').value;
     if (FirstName === '') {
         FirstName = 'First';
+        document.getElementById('Send').disabled = true;
+        flag_FirstName = 0;
     }
     if (LastName === '') {
         LastName = 'Last';
+        document.getElementById('Send').disabled = true;
+        flag_LastName = 0;
+    }
+    if (flag_checkbox+flag_FirstName+flag_LastName === 3) {
+        document.getElementById('Send').disabled = false;
     }
     var FullEmail = FirstName + '.' + LastName + '@' + College + '.ox.ac.uk';
     document.getElementById('Email').value = FullEmail;
-    document.getElementById('nextPage').value = '/sub/thanks.html#email=' + FullEmail;    
+    document.getElementById('nextPage').value = '/sub/thanks.html#email=' + FullEmail;  
 }
 
 
 function toggleAlert(Identity) {
     if (document.getElementById(Identity).style.display === 'none') {
         document.getElementById(Identity).style.display = 'block';
+        document.getElementById('Send').disabled = true;
         return;
     } else {
         document.getElementById(Identity).style.display = 'none';
@@ -79,8 +93,14 @@ function toggleCheckbox() {
     var check_Mailing = document.getElementById('RegisterMailing').checked;
     if ((check_Mailing === false) && (check_Membership === false)) {
         document.getElementById('Error_Submit_Message').innerHTML = 'error - missing value [?]';
+        flag_checkbox = 0;
+        document.getElementById('Send').disabled = true;
     } else {
+        flag_checkbox = 1;
         document.getElementById('Error_Submit_Message').innerHTML = '';
+        if (flag_checkbox+flag_FirstName+flag_LastName===3) {
+            document.getElementById('Send').disabled = true;
+        }
     }
 }
 
