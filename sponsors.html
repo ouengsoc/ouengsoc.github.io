@@ -7,11 +7,12 @@
         <title>Oxford University Engineering Society</title>
         <meta name="description" content="Oxford University Engineering Society">
         <link rel="stylesheet" href="/style/main.css">
+        <link rel="stylesheet" href="/style/spsrs.css">        
+        <script language='JavaScript' src='/script/spsrs.js'></script> 
         <script language="JavaScript" src="/script/main.js"></script> 
     </head>
     <body onload="setTime()">
             
-        
     <div id="Container">    
         <div id="TopBar">
             <table class="TopBar">
@@ -53,76 +54,96 @@
 
         
         <div id="Main">
-            
-            <h1>Our Sponsors</h1>
-            <br><br>
+     
             <center>
         
-            <!-- Image table for our sponsors -->
-            <!-- Gold Sponsors-->
-            <table class="Sponsor">
-                <tr>
-                    <td class="Sponsor">
-                        <img src="image/sponsors/schlumberger.ashx" class="SponsorGold">
-                    </td>
-                       <td class="Sponsor">
-                       <img src="image/sponsors/baml.jpg" class="SponsorGold">
-                    </td>
-             
-                </tr>
-            </table>
-                
-                <br><br><br>
-            
-            <!-- Silver Sponsors-->
-            <table>
-                <tr>
-                    <td class="SponsorSilver">
-                       <img src="image/sponsors/halma.jpg" class="SponsorSilver">
-                    </td>
-                    <td class="SponsorSilver">
-                        <img src="image/sponsors/jak.png" class="SponsorSilver">
-                    </td>       
-                    <td class="SponsorSilver">
-                        <img src="image/sponsors/shell.jpg" class="SponsorSilver">
-                    </td>
-                     <td class="SponsorSilver">
-                        <img src="image/sponsors/palantir.png" class="SponsorSilver">
-                    </td>
-                
-                </tr>
-            </table>    
-                <br><br><br>
-            <!-- Bronze and Bronze Plus Sponsors-->    
-            <table>   
-                <tr>
-                   <td class="SponsorBronze">
-                        <img src="image/sponsors/newton.jpg" class="SponsorBronze">
-                    </td>
-                    <td class="SponsorBronze">
-                        <img src="image/sponsors/arup.png" class="SponsorBronze">
-                    </td>
-                    <td class="SponsorBronze">
-                       <img src="image/sponsors/unilever.jpg" class="SponsorBronzePlus">
-                    </td>
-                     <td class="SponsorBronze">
-                        <img src="image/sponsors/jlr.jpg" class="SponsorBronze">
-                    </td>
-                     <td class="SponsorBronze">
-                        <img src="image/sponsors/Bp.jpeg" class="SponsorBronze">
-                    </td>
-                </tr>
-                
-                
-            
-            </table>
-        
+                <!-- Image table for our sponsors -->
+                <!-- Gold Sponsors
+
+                    <h1 class='spsrs'>Gold Sponsors</h1>
+                <table class="spsr">
+                    <tr>
+                        <td class="spsr">
+                            <img src="/image/sponsors/placeholder.jpg" class="spsrGold" onclick='javascript:toggleOverlay("placeholder")'>
+                        </td>
+                           <td class="spsr">
+                           <img src="/image/sponsors/placeholder.jpg" class="spsrGold" onclick='javascript:toggleOverlay("placeholder")'>
+                        </td>
+
+                    </tr>
+                </table>-->
+
+
+                <!-- Silver Sponsors-->
+                <h1 class='spsrs'>Silver Sponsors</h1>
+                <table class='spsr'>
+                    <tr>
+                         <td class="spsrSilver"><center>
+							 <img src="image/sponsors/baml.jpg" class="spsrSilver" onclick='javascript:toggleOverlay("placeholder")'></center>
+                        </td>
+
+                    </tr>
+                </table>    
+                    <br><br>
+                <!-- Bronze and Bronze Plus Sponsors    
+                <h1 class='spsrs'>Bronze Sponsors</h1>
+                <table class='spsr'>   
+                    <tr>
+                       <td class="spsrBronze">
+                            <img src="image/sponsors/placeholder.png" class="spsrBronze" onclick='javascript:toggleOverlay("placeholder")'>
+                        </td>
+                        <td class="spsrBronze">
+                            <img src="image/sponsors/placeholder.png" class="spsrBronze" onclick='javascript:toggleOverlay("placeholder")'>
+                        </td>
+                        <td class="spsrBronze">
+                           <img src="image/sponsors/placeholder.png" class="spsrBronzePlus" onclick='javascript:toggleOverlay("placeholder")'>
+                        </td>
+                         <td class="spsrBronze">
+                            <img src="image/sponsors/placeholder.png" class="spsrBronze" onclick='javascript:toggleOverlay("placeholder")'> 
+                        </td>
+                         <td class="spsrBronze">
+                            <img src="image/sponsors/placeholder.png" class="spsrBronze" onclick='javascript:toggleOverlay("placeholder")'>
+                        </td>
+                    </tr>
+				-->
+
+
+                </table>
+           <div id="Fade" onclick='javascript:toggleOverlay("baml_overlay")'>   
+            </div>
+            <div id="Overlay" >
+                <div id="OverlayClose" onclick='javascript:toggleOverlay();'>Close</div>
+                    <table class='Gold' id='baml_overlay'>
+                        <tr>
+                            <td class='GoldImg'>
+								<a href='http://careers.bankofamerica.com/emea' target='_blank'><img src="image/sponsors/baml.jpg"  class="GoldImg" ></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class='GoldContent'>
+                                <div id='Summary1'>
+									Bank of America is one of the world's leading financial institutions, serving individual consumers, small-and middle-market businesses, large corporations and governments with a full range ofnfinancial and risk management products and services. Our purpose is to make financial lives better.
+									<br><br>
+									Interested in FinTech? As one of the world's largest financial institutions with a full range financial and risk management products and services, technology is crucial to our success. From simple programming to big data challenges, technology underpins everything we do.
+									<br><br>
+									The global nature of our business offers the opportunity to travel and meet with colleagues from around the world; you’ll get to work with the latest technologies alongside some of the most highly regarded technologist in the industry.									
+								</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class='GoldLinks'>
+                                <a href=# class='GoldLinks'>link 1</a> | 
+                                <a href=# class='GoldLinks'>Link_Facebook</a> |
+                                <a href=# class='GoldLinks'>Custom_Link</a>
+                            </td>
+                        </tr>
+                    </table>
+            </div>
         
         </center>
             
-            
     </div>
-          
+     
 
                
               <div id="BotBar">
@@ -141,6 +162,8 @@
         </div>
         </div>
 
+         
+        
     </body>
         
 </html>
