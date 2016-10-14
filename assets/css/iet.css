@@ -4596,7 +4596,6 @@
 
 
 body {
-    overflow-y: hidden; 
     background-image: url('/image/IET/view_blur.jpg');
     background-color: #333333;
     background-repeat:repeat;
