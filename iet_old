@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<!--
+	Elemental by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>IET Ball - OUEngSoc</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/iet.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+        
+     <!-- Fade-->
+        <div id="Fade"></div>
+
+		<!-- Header -->
+			<div id="header">
+				<a class="logo" href="index.html">Oxford University <strong class="stronglogo">Engineering Society</strong></a>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+					</ul>
+				</nav>
+			</div>
+
+		<!-- Main -->
+        				<!-- Three -->
+					<section id="three" class="wrapper style2 spotlight">
+						<div class="content">
+							<div class="inner">
+								<h2>Etiam consequat</h2>
+								<p>Praesent dapibus, neque id cursus faucibus, tortor neque ege tas augue, eu vulputate magna eros eu erat. Aliquam erat et volutpat. Nam dui mi, tincidunt quis, accumsan porttitor tempus.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Learn More</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="image">
+							<img src="images/pic03.jpg" data-position="center right" alt="" />
+						</div>
+					</section>
+
+			<div id="main">
+
+				<!-- Header -->
+					<header>
+						<h1>IET Ball</h1>
+					</header>
+
+				<!-- Content -->
+					<section id="content" class="wrapper">
+						<h2>Magna sed consequat</h2>
+						<p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
+						<p>Blandit ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
+						<p>Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae lorem ipsum adipiscing ac. Vivamus ornare laoreet odio vis praesent.</p>
+					</section>
+	<!-- Banner -->
+					<section class="banner">
+						<h2>Ipsum feugiat tempus sed aliquam<br />
+						neque dapibus lorem volutpat</h2>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</section>
+			</div>
+
+        
+        
+        <!-- Two -->
+					<section id="two" class="wrapper style1 spotlight alt">
+						<div class="content">
+							<div class="inner">
+								<h2>Ipsum accumsan</h2>
+								<p>Praesent dapibus, neque id cursus faucibus, tortor neque ege tas augue, eu vulputate magna eros eu erat. Aliquam erat et volutpat. Nam dui mi, tincidunt quis, accumsan porttitor tempus.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Learn More</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="image">
+							<img src="images/pic02.jpg" data-position="30% 30%" alt="" />
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style2 spotlight">
+						<div class="content">
+							<div class="inner">
+								<h2>Etiam consequat</h2>
+								<p>Praesent dapibus, neque id cursus faucibus, tortor neque ege tas augue, eu vulputate magna eros eu erat. Aliquam erat et volutpat. Nam dui mi, tincidunt quis, accumsan porttitor tempus.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Learn More</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="image">
+							<img src="images/pic03.jpg" data-position="center right" alt="" />
+						</div>
+					</section>
+
+				<!-- Four -->
+					<section id="four" class="wrapper style3 spotlight alt">
+						<div class="content">
+							<div class="inner">
+								<h2>Quis adipiscing</h2>
+								<p>Praesent dapibus, neque id cursus faucibus, tortor neque ege tas augue, eu vulputate magna eros eu erat. Aliquam erat et volutpat. Nam dui mi, tincidunt quis, accumsan porttitor tempus.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Learn More</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="image">
+							<img src="images/pic04.jpg" data-position="top right" alt="" />
+						</div>
+					</section-->
+
+	<!-- Footer -->
+			<div id="footer">
+				<ul class="joined-icons">
+					<li><a href="https://www.facebook.com/OUEngSoc/" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+					<li><a href="https://mobile.twitter.com/OUEngSoc" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+					<li><a href="mailto:president@ouengsoc.org" class="icon fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+				</ul>
+                <p class="copyright" style="color: #aaaaaa;">&copy; 2016 by <a href="http://mqiu.uk" target="_blank">MMQ FOR OUENGSOC</a></p>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
