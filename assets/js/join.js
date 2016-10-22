@@ -49,7 +49,7 @@ function printEmail(Identity) {
     }
     var FullEmail = FirstName + '.' + LastName + '@' + College + '.ox.ac.uk';
     document.getElementById('Email').value = FullEmail;
-    document.getElementById('nextPage').value = '/sub/thanks.html#email=' + FullEmail;
+    document.getElementById('nextPage').value = '/subpages/thanks.html#email=' + FullEmail;
 }
 
 
@@ -72,7 +72,7 @@ function printCollege() {
     }
     var FullEmail = FirstName + '.' + LastName + '@' + College + '.ox.ac.uk';
     document.getElementById('Email').value = FullEmail;
-    document.getElementById('nextPage').value = '/sub/thanks.html#email=' + FullEmail;  
+    document.getElementById('nextPage').value = '/subpages/thanks.html#email=' + FullEmail;  
 }
 
 
