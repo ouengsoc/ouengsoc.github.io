@@ -4109,7 +4109,7 @@
 		width: 100%;
 		z-index: 10001;
         color: #cccccc;
-        opacity: 0.3;
+        opacity: 0.6;
 	}
 
 
@@ -4404,6 +4404,7 @@
 		text-align: center;
 		width: 70em;
 		max-width: calc(100% - 4em);
+        opacity: .6;
 
 	}
 
@@ -4678,4 +4679,9 @@ body {
     width:100%;
     height: 100%;
     z-index: 0;
+}
+
+
+#ballotform {
+    display: none;;
 }

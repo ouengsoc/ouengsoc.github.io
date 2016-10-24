@@ -13,13 +13,21 @@ function toggleGoldContent(SummaryID) {
 }
 
 
-function toggleOverlay(ID) {
+function toggleOverlay(SummaryID) {
+    if (SummaryID==="Summary") {
+        document.getElementById("Summary1").style.display = 'none';
+        document.getElementById("Summary2").style.display = 'none';
+        SummaryID = "Summary1";
+    }
     if (document.getElementById('Overlay').style.display === 'none') {
         document.getElementById('Overlay').style.display = 'block';
-        document.getElementById('Fade').style.display = 'block';
+        document.getElementById('Fade').style.display = 'block';   
+        document.getElementById(SummaryID).style.display = 'block';
         return;
     } else {
-        document.getElementById('Overlay').style.display = 'none';      document.getElementById('Fade').style.display = 'none';
+        document.getElementById(SummaryID).style.display = 'none';
+        document.getElementById('Overlay').style.display = 'none';
+        document.getElementById('Fade').style.display = 'none';
         return;
     }
 }
