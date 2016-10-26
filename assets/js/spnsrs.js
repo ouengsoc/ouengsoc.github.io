@@ -16,7 +16,8 @@ function toggleGoldContent(SummaryID) {
 function toggleOverlay(SummaryID) {
     if (SummaryID==="Summary") {
         document.getElementById("Summary1").style.display = 'none';
-        document.getElementById("Summary2").style.display = 'none';
+        document.getElementById("Summary2").style.display = 'none';        
+        document.getElementById("Summary3").style.display = 'none';
         SummaryID = "Summary1";
     }
     if (document.getElementById('Overlay').style.display === 'none') {
