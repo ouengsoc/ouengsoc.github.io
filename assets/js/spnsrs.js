@@ -18,6 +18,7 @@ function toggleOverlay(SummaryID) {
         document.getElementById("Summary1").style.display = 'none';
         document.getElementById("Summary2").style.display = 'none';        
         document.getElementById("Summary3").style.display = 'none';
+        document.getElementById("Summary4").style.display = 'none';
         SummaryID = "Summary1";
     }
     if (document.getElementById('Overlay').style.display === 'none') {
