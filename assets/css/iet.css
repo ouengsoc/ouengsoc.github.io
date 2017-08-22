@@ -3083,6 +3083,8 @@
 		background-size: cover;
 		position: relative;
 		text-align: center;
+        background-image:none;
+        background-color: rgba(0,0,0,.2);
 	}
 
 		.banner input[type="submit"],
