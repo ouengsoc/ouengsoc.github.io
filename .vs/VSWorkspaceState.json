@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\assets\\js"
   ],
-  "SelectedNode": "\\committee.html",
+  "SelectedNode": "\\assets\\js\\spnsrs.js",
   "PreviewInSolutionExplorer": false
 }
