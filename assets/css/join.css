@@ -93,7 +93,6 @@ input.Form_locked {
     border: 0px #cccccc solid;
     color: #666666;
     /*height: 20px;*/
-    text-transform: lowercase;
     letter-spacing: 1px;
     padding-left: 5px;
     margin-bottom: 5px;
