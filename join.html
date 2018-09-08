@@ -78,7 +78,7 @@
                                     First Name
                                 </td>
                                 <td class='Form2_noline' >
-                                    <input type='text' name='FirstName' id='FirstName' placeholder='First' class='Form' onkeyup='javascript:printEmail("FirstName")'> 
+                                    <input type='text' name='FirstName' id='FirstName' placeholder='First' class='Form' onkeyup='javascript:printEmail("FirstName")' required> 
                                 </td>
                                 <td class='Form2_noline'>
                                     <input type='text'  id='errorFirstName' class='Error' value='error' readonly='true' onclick='javascript:toggleAlert("HelpBox")' >
@@ -89,7 +89,7 @@
                                     Last Name
                                 </td>
                                 <td class='Form2_noline'>
-                                    <input type='text' name='LastName' id='LastName' placeholder='Last' class='Form' onkeyup='javascript:printEmail("LastName")' > 
+                                    <input type='text' name='LastName' id='LastName' placeholder='Last' class='Form' onkeyup='javascript:printEmail("LastName")' required> 
                                 </td>
                                 <td class='Form2_noline'>
                                     <input type='text'  id='errorLastName' class='Error' value='error' readonly='true' onclick='javascript:toggleAlert("HelpBox")' >
@@ -100,8 +100,9 @@
                                     College 
                                 </td>
                                 <td class='Form2'>
-                                    <select name='College' class='Form' id='College' onchange='javascript:printCollege()' >
-                                        <option value='balliol' class='Form'>Balliol</option>
+                                    <select name='College' class='Form' id='College' onchange='javascript:printCollege()' required>
+                                        <option value='select college' class='Form' selected></option>
+					<option value='balliol' class='Form'>Balliol</option>
                                         <option value='bnc' class='Form'>Brasenose</option>
                                         <option value='chch' class='Form'>Christ Church</option>
                                         <option value='exeter' class='Form'>Exeter</option>
@@ -137,7 +138,7 @@
                                     Your Email is 
                                 </td>
                                 <td class='Form2_locked' colspan='2'>
-                                    <input type='text' name='_replyto' id='Email' class='Form_locked' style='width:500px; background-color: inherit; color: #777777; letter-spacing: 2px; outline: 0px solid black'; placeholder:'eg. chri5287@OX.AC.UK'> 
+                                    <input type='text' name='_replyto' id='Email' class='Form_locked' style='width:500px; background-color: inherit; color: #777777; letter-spacing: 2px; outline: 0px solid black'; placeholder:'eg. bnc1234@OX.AC.UK' required> 
                                 </td>
                             </tr>
                             <!--<tr>
