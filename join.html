@@ -96,17 +96,18 @@
                                 </td>
                             </tr>
 				<tr>
-                               <td class='Form1_noline'>
-                                    Gender
+                                <td class='Form1'>
+                                    College 
                                 </td>
-                                <td class='Form2_noline'>
-                                    <input type='radio' name='entry.1183623264' value='Male' class='Form' checked> 
-				    <input type='radio' name='entry.1183623264' value='Female' class='Form' > 
-			            <input type='radio' name='entry.1183623264' value='Other' class='Form' >
+                                <td class='Form2'>
+                                    <select name='entry.1183623264' class='Form' id='College'>
+                                        <option value='select gender' class='Form' selected></option>
+					<option value='M' class='Form'>Male</option>
+                                        <option value='F' class='Form'>Female</option>
+					<option value='Other' class='Form'>Other</option>
+                                    </select>
                                 </td>
-                                <td class='Form2_noline'>
-                                    <input type='text'  id='errorLastName' class='Error' value='error' readonly='true' onclick='javascript:toggleAlert("HelpBox")' >
-                                </td>
+                                <td class="Form2"></td>
                             </tr>
                             <tr>
                                 <td class='Form1'>
@@ -157,13 +158,15 @@
                                     <input type='text'  id='errorLastName' class='Error' value='error' readonly='true' onclick='javascript:toggleAlert("HelpBox")' >
                                 </td>
                             </tr>
-				<tr>
-                                <td></td><td class='Form1_noline'>
+				 <tr>
+                                <td class='Form1_noline'>
                                     Student Type
                                 </td>
-                                <td class='Form2_noline' colspan='1'>
-                                    Undergrad <input type='radio' name='entry.2048196379' value='Junior Member' selected>
-                                    Grad Student <input type='radio' name='entry.2048196379' value='Senior Member'>
+                                <td class='Form2_noline' >
+                                    <input type='text' name='entry.2048196379' id='FirstName' placeholder="'UG' for undergrad, 'PG' for postgrad" class='Form'> 
+                                </td>
+                                <td class='Form2_noline'>
+                                    <input type='text'  id='errorFirstName' class='Error' value='error' readonly='true' onclick='javascript:toggleAlert("HelpBox")' >
                                 </td>
                             </tr>
 				 <tr>
@@ -171,7 +174,7 @@
                                     Year of Study
                                 </td>
                                 <td class='Form2_noline'>
-                                    <input type='text' name='entry.1258376885' placeholder='Enter '1' if Fresher etc.' class='Form' > 
+                                    <input type='text' name='entry.1258376885' placeholder="Eg.'1' if Fresher" class='Form' > 
                                 </td>
                                 <td class='Form2_noline'>
                                     <input type='text'  id='errorLastName' class='Error' value='error' readonly='true' onclick='javascript:toggleAlert("HelpBox")' >
