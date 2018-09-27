@@ -141,20 +141,6 @@
                                     <input type='text' name='_replyto' id='Email' class='Form_locked' placeholder='eg. bnc1234@OX.AC.UK' style='width:500px; background-color: inherit; color: #777777; letter-spacing: 2px; outline: 0px solid black'> 
                                 </td>
                             </tr>
-				var $form = $('form#test-form'),
-    				url = 'https://script.google.com/macros/s/abcdefghijklmnopqrstuvwxyz1234567890/exec'
-
-				$('#submit-form').on('click', function(e) {
-  				e.preventDefault();
-  				var jqxhr = $.ajax({
-    				url: url,
-    				method: "GET",
-    				dataType: "json",
-    				data: $form.serializeObject()
-  				}).success(
-    				// do something
-  				);
-				})
                             <!--<tr>
                                 <td></td><td class='Form1_noline'>
                                     Student Type
@@ -245,5 +231,20 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-	</body>
+			<script> var $form = $('form#test-form'),
+    				url = 'https://script.google.com/macros/s/AKfycbxe6yUaFdS50KZ8cEe4-STAaGqJHtOLeR0haGjjb5Vswmt7P1c/exec'
+
+				$('#submit-form').on('click', function(e) {
+  				e.preventDefault();
+  				var jqxhr = $.ajax({
+    				url: url,
+    				method: "GET",
+    				dataType: "json",
+    				data: $form.serializeObject()
+  				}).success(
+    				// do something
+  				);
+				})
+			</script>
+				</body>
 </html>
