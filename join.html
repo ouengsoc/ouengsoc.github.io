@@ -67,7 +67,7 @@
                     <!--Begin form --------------------------------------------------------------------------------------------------------------- -->
 
 
-                    <form action='https://formspree.io/heng.ng@ouengsoc.org' method='POST'>
+<!--                     <form action='https://formspree.io/heng.ng@ouengsoc.org' method='POST'> -->
                         <input type='hidden' name='_next' id='nextPage' value='subpages/thanks.html' />
                         <input type='hidden' name='_subject' value='formspreejoin' />
                         <input type='hidden' name='_format' value='plain' />
@@ -141,6 +141,20 @@
                                     <input type='text' name='_replyto' id='Email' class='Form_locked' placeholder='eg. bnc1234@OX.AC.UK' style='width:500px; background-color: inherit; color: #777777; letter-spacing: 2px; outline: 0px solid black'> 
                                 </td>
                             </tr>
+				var $form = $('form#test-form'),
+    				url = 'https://script.google.com/macros/s/abcdefghijklmnopqrstuvwxyz1234567890/exec'
+
+				$('#submit-form').on('click', function(e) {
+  				e.preventDefault();
+  				var jqxhr = $.ajax({
+    				url: url,
+    				method: "GET",
+    				dataType: "json",
+    				data: $form.serializeObject()
+  				}).success(
+    				// do something
+  				);
+				})
                             <!--<tr>
                                 <td></td><td class='Form1_noline'>
                                     Student Type
