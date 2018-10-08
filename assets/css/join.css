@@ -27,7 +27,7 @@ td.Form1_locked {
 
 td.Form1_noline {
     text-transform: uppercase;
-    text-align: right;
+    text-align: left;
     font-size:13px; 
     letter-spacing: 3px;
     padding-top:10px;
